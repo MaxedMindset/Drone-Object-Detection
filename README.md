@@ -1,4 +1,4 @@
-# Drohnenerkennung mit YOLO11
+# Deep Learning basierte Drohnenerkennung in Bildern
 
 **Autoren:** Maximilian Steinbauer und Achille Tindo Mbogning
 
