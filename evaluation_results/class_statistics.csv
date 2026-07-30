@@ -1,0 +1,5 @@
+class,number_of_images,detected_as_drone,detection_rate_percent,average_confidence
+drone,1,1,100.0,0.8728
+bird,24,14,58.33,0.4972
+helicopter,11,6,54.55,0.5238
+plane,22,12,54.55,0.4985
