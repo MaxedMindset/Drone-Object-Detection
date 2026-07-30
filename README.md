@@ -56,7 +56,7 @@ Quelle:
 
 <https://www.kaggle.com/datasets/sshikamaru/drone-yolo-detection>
 
-Die Originaldaten befinden sich im Projektordner `Database1/`. Das Skript `prepare_dataset.py` teilt die Daten reproduzierbar auf:
+Das Skript `prepare_dataset.py` teilt die Daten reproduzierbar auf:
 
 | Teilmenge | Anteil |
 |---|---:|
@@ -98,6 +98,50 @@ Für die Auswertung wurden die Klassen-IDs vereinheitlicht:
 ```
 
 Dieser Datensatz ermöglicht eine gezielte Analyse von Objekten, die aus größerer Entfernung oder bei geringer Bildauflösung einer Drohne ähneln können.
+
+# Hinweis zu den Datensätzen
+
+Die für dieses Projekt verwendeten Datensätze sind **nicht Bestandteil dieses GitHub-Repositories**.
+
+Der Grund dafür ist die sehr große Anzahl an Dateien der Datensätze. Dadurch würde das Repository unnötig groß werden und GitHub ist für die Verwaltung solcher Datensätze nur bedingt geeignet.
+
+Um das Projekt ausführen zu können, müssen die Datensätze daher selbst heruntergeladen und in die entsprechenden Ordner eingefügt werden.
+
+## Benötigte Datensätze
+
+### 1. Drohnendatensatz (Training)
+
+Quelle:
+https://www.kaggle.com/datasets/sshikamaru/drone-yolo-detection
+
+Nach dem Download den Datensatz in den Ordner
+
+```
+drone_dataset/
+```
+
+kopieren.
+
+---
+
+### 2. Datensatz zur Evaluierung
+
+Quelle:
+**(Hier den Roboflow-Link einfügen)**
+
+Nach dem Download den Datensatz in den Ordner
+
+```
+birds_helicopters.v4i.yolov11/
+```
+
+kopieren.
+
+---
+
+### 3. Kombinierter Testdatensatz
+
+Der Ordner `combined_test_yolo` wurde im Rahmen dieses Projekts erstellt und dient ausschließlich der Evaluierung des trainierten Modells. Er kann anhand der beiden oben genannten Datensätze erneut erstellt werden.
 
 ### Kombinierter Testdatensatz
 
