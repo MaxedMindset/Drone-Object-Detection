@@ -1,7 +1,5 @@
 # Deep Learning basierte Drohnenerkennung in Bildern
 
-**Autoren:** Maximilian Steinbauer und Achille Tindo Mbogning
-
 ## Inhaltsverzeichnis
 
 1. [Projektidee](#projektidee)
