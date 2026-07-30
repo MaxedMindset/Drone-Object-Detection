@@ -29,6 +29,8 @@ Ziel dieses Projekts ist die automatische Erkennung von Drohnen in Bildern mithi
 
 Neben der normalen Bewertung der Drohnenerkennung wurde zusätzlich untersucht, welche ähnlich aussehenden Objekte fälschlicherweise als Drohne erkannt werden. Dafür wurden insbesondere die Klassen **Vogel**, **Hubschrauber** und **Flugzeug** betrachtet.
 
+---
+
 ## Related Work
 
 YOLO steht für **You Only Look Once** und beschreibt eine Familie von Echtzeit-Objekterkennungsmodellen. Anders als zweistufige Verfahren führt YOLO die Klassifikation und Lokalisierung von Objekten innerhalb eines gemeinsamen neuronalen Netzes aus. Dadurch kann eine hohe Verarbeitungsgeschwindigkeit erreicht werden.
