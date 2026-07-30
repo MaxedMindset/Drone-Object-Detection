@@ -99,6 +99,23 @@ Für die Auswertung wurden die Klassen-IDs vereinheitlicht:
 
 Dieser Datensatz ermöglicht eine gezielte Analyse von Objekten, die aus größerer Entfernung oder bei geringer Bildauflösung einer Drohne ähneln können.
 
+
+---
+
+
+### 3. Kombinierter Testdatensatz
+
+Der Ordner `combined_test_yolo` wurde im Rahmen dieses Projekts erstellt und dient ausschließlich der Evaluierung des trainierten Modells. Er kann anhand der beiden oben genannten Datensätze erneut erstellt werden.
+
+### Kombinierter Testdatensatz
+
+Für die offizielle YOLO-Auswertung wurde zusätzlich der Ordner `combined_test_yolo/` erzeugt. Er enthält Bilder aus dem Drohnen-Testdatensatz und aus dem externen Testdatensatz. Da das trainierte Modell nur die Klasse `drone` kennt, werden ausschließlich Bounding Boxes der Klasse 0 übernommen. Bilder ohne Drohne erhalten leere Labeldateien.
+
+Dadurch kann YOLO regulär als Ein-Klassen-Modell evaluiert werden, während die detaillierte Analyse der Verwechslungen separat erfolgt.
+
+---
+
+
 # Hinweis zu den Datensätzen
 
 Die für dieses Projekt verwendeten Datensätze sind **nicht Bestandteil dieses GitHub-Repositories**.
@@ -136,18 +153,6 @@ birds_helicopters.v4i.yolov11/
 ```
 
 kopieren.
-
----
-
-### 3. Kombinierter Testdatensatz
-
-Der Ordner `combined_test_yolo` wurde im Rahmen dieses Projekts erstellt und dient ausschließlich der Evaluierung des trainierten Modells. Er kann anhand der beiden oben genannten Datensätze erneut erstellt werden.
-
-### Kombinierter Testdatensatz
-
-Für die offizielle YOLO-Auswertung wurde zusätzlich der Ordner `combined_test_yolo/` erzeugt. Er enthält Bilder aus dem Drohnen-Testdatensatz und aus dem externen Testdatensatz. Da das trainierte Modell nur die Klasse `drone` kennt, werden ausschließlich Bounding Boxes der Klasse 0 übernommen. Bilder ohne Drohne erhalten leere Labeldateien.
-
-Dadurch kann YOLO regulär als Ein-Klassen-Modell evaluiert werden, während die detaillierte Analyse der Verwechslungen separat erfolgt.
 
 ---
 
